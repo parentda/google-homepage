@@ -1,65 +1,118 @@
 a {
     text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.header .top-left a, .header .top-right a {
+    color: #000;
+    opacity: 0.75;
+}
+
+.footer .bottom-left a, .footer .bottom-right a {
+    color: #5f6368;
+}
+
+#search {
+    border-radius: 20px;
 }
 
 div {
     /* border: 3px solid green; */
+    font-family: arial, sans-serif;
+}
+
+button {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+img {
+    padding: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60vh;
+    /* align-items: center;
+    justify-items: center;  */
+    /* border: 3px solid pink; */
+    /* position: relative;
+    bottom: 200px; */
 }
 
 .center {
-    width: max-content;
-    height: max-content;
-    border: 3px solid blue;
+    /* display: grid; */
+    /* width: max-content;
+    height: max-content; */
+    /* border: 3px solid blue; */
     text-align: center;
-    margin: auto;
+    align-self: center;
+    justify-self: center;
+    /* margin: auto; */
 }
 
 .bottom-right {
-    display: grid;
-    grid-auto-flow: column;
+    /* display: grid;
+    grid-auto-flow: column; */
     /* position: fixed;
     bottom: 0;
     right: 0; */
+    justify-self: right;
+    padding: 10px;
 }
 
 .bottom-left {
-    display: grid;
-    grid-auto-flow: column;
-    /* position: fixed;
-    bottom: 0;
-    left: 0; */
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    justify-self: left;
+    padding: 10px;
 }
 
 .top-right {
-    display: grid;
-    grid-auto-flow: column;
+    /* display: grid;
+    grid-auto-flow: column; */
     /* position: fixed;
     top: 0;
     right: 0; */
+    justify-self: right;
+    padding: 10px;
 }
 
 .top-left {
-    display: grid;
-    grid-auto-flow: column;
+    /* display: grid;
+    grid-auto-flow: column; */
     /* position: fixed;
     top: 0;
     left: 0; */
+    justify-self: left;
+    padding: 10px;
 }
 
 .header {
     display: grid;
-    position: fixed;
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
     top: 0;
     height: auto;
-    width: auto;
-    border: 3px solid red;
+    width: 98%;
+    /* border: 3px solid red; */
+    font-size: 13px;
+    padding-top: 10px;
 }
 
 .footer {
     display: grid;
     position: fixed;
+    grid-template-columns: 1fr 1fr;
     bottom: 0;
     height: auto;
-    width: auto;
-    border: 3px solid green;
+    width: 98%;
+    /* border: 3px solid green; */
+    font-size: 14px;
+    background: #f2f2f2;
+    padding: 5px;
 }
