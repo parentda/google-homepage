@@ -28,7 +28,8 @@ a {
     grid-template-rows: 1fr 1fr 1fr;
     height: auto;
     gap: 2px;
-    padding-top: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
     /* border: 3px solid red; */
 }
 
@@ -41,6 +42,24 @@ a {
     /* border: 1px solid #5f6368; */
 }
 
+#account {
+    display: inline-flex;
+    background-color: green;
+    font-size: 17px;
+    color: white;
+    width: 33px;
+    height: 33px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 33px; */
+    background-color: rgb(18, 73, 56);
+    font-weight: bold;
+    margin-left: 10px;
+    position: relative;
+    bottom: 7px;
+    vertical-align: top;
+}
 
 div {
     /* border: 3px solid green; */
@@ -80,11 +99,9 @@ img {
 }
 
 .bottom-right {
-    /* display: grid;
-    grid-auto-flow: column; */
-    /* position: fixed;
-    bottom: 0;
-    right: 0; */
+    display: flex;
+    width: auto;
+    justify-content: space-between;
     justify-self: right;
     padding: 10px;
 }
@@ -103,17 +120,15 @@ img {
     /* position: fixed;
     top: 0;
     right: 0; */
-    border: 3px solid pink;
+    /* border: 3px solid pink; */
     justify-self: right;
     padding: 10px;
 }
 
 .top-left {
-    /* display: grid;
-    grid-auto-flow: column; */
-    /* position: fixed;
-    top: 0;
-    left: 0; */
+    display: flex;
+    width: auto;
+    justify-content: space-between;
     justify-self: left;
     padding: 10px;
 }
