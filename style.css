@@ -14,9 +14,26 @@ a {
 }
 
 #search {
-    border-radius: 20px;
-    width: 425px;
-    height: 34px;
+    border-radius: 35px;
+    width: 375px;
+    height: 45px;
+    padding: 0px 50px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+#search-icon {
+    height: 15px;
+    position: relative;
+    left: 50px;
+    top: 13px;
+}
+
+#mic {
+    height: 20px;
+    position: relative;
+    right: 50px;
+    top: 14px;
 }
 
 .Menu {
@@ -70,6 +87,14 @@ button {
     font-family: arial, sans-serif;
     font-size: 14px;
     color: #5f6368;
+    padding: 10px 14px;
+    border-style: none;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.buttons {
+    padding: 25px;
 }
 
 img {
@@ -79,7 +104,7 @@ img {
 .parent {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60vh;
+    grid-template-rows: 70vh;
     /* align-items: center;
     justify-items: center;  */
     /* border: 3px solid pink; */
